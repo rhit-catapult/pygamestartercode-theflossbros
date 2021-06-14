@@ -79,8 +79,6 @@ import math
 #   using parentheses to make clear the order of operations.
 #   Then run the program, checking that what gets printed is what you expect.
 #  _
-#  After you feel that you understand how to do arithmetic in Python,
-#  do Part 1 of the Moodle quiz (on Numbers, Arithmetic, and Precedence).
 ###############################################################################
 
 # print()
@@ -119,8 +117,8 @@ import math
 
 # print()
 # print("_TODO 8:")
-# print("3 + 2 evaluations to:", 3 + 2)
-# print("3 / 0 evaluations to:", 3 / 0)
+# print("3 + 2 evaluates to:", 3 + 2)
+# print("3 / 0 evaluates to:", 3 / 0)
 
 ###############################################################################
 # TODO: 9.
@@ -134,7 +132,7 @@ import math
 
 # print()
 # print("_TODO 9:")
-# print("3 / 'hello' evaluations to:", 3 / 'hello')
+# print("3 / 'hello' evaluates to:", 3 / 'hello')
 
 ###############################################################################
 # TODO: 10.
@@ -142,8 +140,6 @@ import math
 #   Then run the program, paying close attention to the last line
 #   of each error message (in red).
 #  _
-#  After you feel that you understand the basics of syntax and run-time errors,
-#  do Part 2 of the Moodle quiz (on Exceptions: Syntax and Run-Time Errors).
 ###############################################################################
 
 # print()
@@ -192,10 +188,10 @@ import math
 
 # print()
 # print("_TODO 12:")
-# print("4.2 / 2.0 evaluations to:", 4.2 / 2.0)
-# print("4.2 / 2   evaluations to:", 4.2 / 2)
-# print("4 / 2     evaluations to:", 4 / 2)
-# print("3 / 2     evaluations to:", 3 / 2)
+# print("4.2 / 2.0 evaluates to:", 4.2 / 2.0)
+# print("4.2 / 2   evaluates to:", 4.2 / 2)
+# print("4 / 2     evaluates to:", 4 / 2)
+# print("3 / 2     evaluates to:", 3 / 2)
 
 ###############################################################################
 # TODO: 13.
@@ -208,8 +204,8 @@ import math
 
 # print()
 # print("_TODO 13:")
-# print("17 // 5   evaluations to:", 17 // 5)
-# print("17 % 5    evaluations to:", 17 % 5)
+# print("17 // 5   evaluates to:", 17 // 5)
+# print("17 % 5    evaluates to:", 17 % 5)
 
 ###############################################################################
 # TODO: 14.
@@ -241,8 +237,6 @@ import math
 #     I'm on "pins and needles" about '"'".
 #   Hint: consider using the   +   operator as part of your solution.
 #  _
-#   After you feel that you understand the basics of the preceding _TODOs,
-#   do Part 3 of the Moodle quiz (on Objects, Types, and Values).
 ###############################################################################
 
 # print()
@@ -373,10 +367,8 @@ import math
 #    then your code should print:  33 40
 #  _
 #  Spend up to 1 minute on this challenge, typing your code and running the
-#  program to try out your solution.  Then watch the solution per the video.
+#  program to try out your solution.
 #  _
-#  Finally, if you have not already done so, do Part 4 of the Moodle quiz
-#  (on Names, Variables, and Assignment).
 ###############################################################################
 
 # print()
