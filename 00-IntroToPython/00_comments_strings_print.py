@@ -19,10 +19,6 @@
 #           to make the output easier to see.
 #   Confirm that the output is what you expected, asking questions as desired.
 #
-#   This module is just an example (m1e, note the   e   ).
-#   After you have read and run the code,
-#   feel free to play with it briefly, then move on to m2.
-#
 ###############################################################################
 
 
