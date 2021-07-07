@@ -30,8 +30,9 @@ Authors: David Mutchler, Sana Ebrahimi, Mohammed Noureddine, Vibha Alangar,
 #  _
 #   Then, below this _TODO, put statements that call functions defined
 #   in the math module to do each of the following, running the program
-#   after typing each, to test your statements one by one:
+#   after typing each, to test your statements one by one by printing the result:
 #     -- the cosine of 2.5
+#             Example (giving you the first answer) --> print(math.cos(2.5))
 #     -- the degrees that is the equivalent of -0.5 radians
 #     -- The base-2 logarithm of the constant   e   where you use the math
 #          module to access the value of the constant   e.
