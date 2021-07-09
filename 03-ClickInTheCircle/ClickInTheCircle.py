@@ -40,12 +40,12 @@ def main():
                 sys.exit()
 
             # TODO 2: For a MOUSEBUTTONDOWN event get the click position.
-            # TODO 3: Determine the distance between the click position and the circle_center using the distance
-            # TODO 3:   function and save the result into a variable called distance_from_circle
-            # TODO 5: If distance_from_circle is less than or equal to circle_radius, set message_text to 'Bullseye!'
-            # TODO 5: If distance_from_circle is greater than the circle_radius, set the message_text to 'You missed!'
-            # TODO 9: Start playing the music mixer looping forever if the click is within the circle
-            # TODO 10: Stop playing the music if the click is outside the circle
+                # TODO 3: Determine the distance between the click position and the circle_center using the distance
+                # TODO 3:   function and save the result into a variable called distance_from_circle
+                # TODO 5: If distance_from_circle is less than or equal to circle_radius, set message_text to 'Bullseye!'
+                # TODO 5: If distance_from_circle is greater than the circle_radius, set the message_text to 'You missed!'
+                # TODO 9: Start playing the music mixer looping forever if the click is within the circle
+                # TODO 10: Stop playing the music if the click is outside the circle
 
         screen.fill(pygame.Color("Black"))
 
