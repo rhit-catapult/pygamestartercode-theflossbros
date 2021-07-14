@@ -4,24 +4,28 @@ import pygame, sys
 class Missile:
     def __init__(self, screen, x):
         # Store the data.  Initialize:   y to 591   and   has_exploded to False.
+        # Note: the 591 comes from the screen height (650) minus the ship image height (59).  Best practice would be to
+        #   pass in that value in case the ship image or screen height changes, but simplified here to always be 591.
         pass
 
     def move(self):
         # Make self.y 5 smaller than it was (which will cause the Missile to move UP).
+        # Note: you could've instead passed in a speed when you made a Missle, but all missles in the game are the same
+        #   speed, so just using a hardcoded 5 is fine.
         pass
 
     def draw(self):
-        # Draw a vertical, 4 pixels thick, 8 pixels long, red (or green) line on the screen,
-        # where the line starts at the current position of this Missile.
+        # Draw a vertical red (or green) line on the screen for the missile, 8 pixels long,  4 pixels thick
+        #   where the line starts at the current position of this Missile.
         pass
 
 
 class Fighter:
     def __init__(self, screen, x, y):
-        # Store the data.
+        # Store the given parameters to instance variables.
         # Set   self.missiles   to the empty list.
         # Load the file  "fighter.png"  as the image
-        # Set the colorkey to white (it has a white background that needs removed)
+        # Set the colorkey to white (it has a white background that needs removed) using the method set_colorkey
         pass
 
     def draw(self):
@@ -29,7 +33,7 @@ class Fighter:
         pass
 
     def fire(self):
-        # Construct a new Missile 50 pixels to the right of this Fighter.
+        # Construct a new Missile self.image.get_width() / 2 pixels to the right of this Fighter's x position.
         # Append that Missile to this Fighter's list of Missile objects.
         pass
 
@@ -42,14 +46,17 @@ class Fighter:
 
 class Badguy:
     def __init__(self, screen, x, y, speed):
-        # Store the given arguments as instance variables with the same name.
-        # Set   is_dead to False   and   original_x to x   and move_right to True.
+        # Store the given arguments as instance variables with the same names.
+        # Set   is_dead to False   and   original_x to x.
         # Load the file  "badguy.png"  as the image. and set its colorkey to black.
+        # Additionally make a   move_right   instance variable set to to True (we might us it in the move method).
         pass
 
     def move(self):
-        # Move 2 units in the current direction.
-        # Switch direction if this Badguy's position is more than 100 pixels from its original position.
+        # Move self.speed units horizontally in the current direction.
+        # If this Badguy's horizontal position is more than 100 pixels from its original x position, then...
+        #     change the direction
+        #     move the y down 4 * self.speed units
         pass
 
     def draw(self):
@@ -77,11 +84,11 @@ class EnemyFleet:
         pass
 
     def move(self):
-        # Make each badguy in this EnemyFleet move.
+        # Make each Badguy in badguys move.
         pass
 
     def draw(self):
-        # Make each badguy in this EnemyFleet draw itself.
+        # Make each Badguy in badguys draw itself.
         pass
 
     def remove_dead_badguys(self):
@@ -99,17 +106,16 @@ def main():
     # TODO 9: Set    enemy_rows    to an initial value of 3.
     # TODO 10: Create an EnemyFleet object (called enemy_fleet) with the screen and enemy_rows
     # TODO 1: Create a Fighter (called fighter) at location  320, 590
+    #             Note: 320 is screen.get_width() / 2 and 590 is screen.get_height() - the ship's image height.
 
     while True:
         clock.tick(60)
         for event in pygame.event.get():
-            pressed_keys = pygame.key.get_pressed()
             # TODO 5: If the event type is KEYDOWN and pressed_keys[pygame.K_SPACE] is True, then fire a missile
             if event.type == pygame.QUIT:
                 sys.exit()
 
         screen.fill((0, 0, 0))
-        pressed_keys = pygame.key.get_pressed()
         # TODO 3: If pygame.K_LEFT is pressed and fighter.x is greater than -50 move the fighter left 5
         # TODO 4: If pygame.K_RIGHT is pressed and fighter.x is less than 590 move the fighter right 5
         # TODO 2: Draw the fighter
@@ -127,6 +133,10 @@ def main():
         #             TODO 15: Mark the badguy is_dead = True
         #             TODO 16: Mark the missile has_exploded = True
 
+        #     TODO 13 (optional extra): For each missile in the fighter missiles
+        #         TODO 14 (optional extra): If the missle.y is less than 0 (or -8)
+        #             TODO 16 (optional extra): Mark the missile has_exploded = True (cleaning up off screen stuff)
+
         # TODO 17: Use the fighter to remove exploded missiles
         # TODO 18: Use the enemy_fleet to remove dead badguys
 
@@ -136,6 +146,7 @@ def main():
 
         # TODO 22: Check for your death.  Figure out what needs to happen.
         # Hints: Check if a Badguy gets a y value greater than 545
+        #    Note: 545 is screen.get_height() -
         #    If that happens set a variable (game_over) as appropriate
         #    If the game is over, show the gameover.png image at (170, 200)
 

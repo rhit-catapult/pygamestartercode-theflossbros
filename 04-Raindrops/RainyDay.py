@@ -92,7 +92,8 @@ def main():
 
     # TODO 2: Make a Clock
     # TODO 7: As a temporary test, make a new Raindrop called test_drop at x=320 y=10
-    # TODO 15: Make a Hero, named mike, with appropriate images, starting at position x=300 y=400.
+    # TODO 15: Make a Hero, named mike, with appropriate images, starting at position x=200 y=400.
+    # TODO 15: Make a Hero, named alyssa, with appropriate images, starting at position x=700 y=400.
     # TODO 23: Make a Cloud, named cloud, with appropriate images, starting at position x=300 y=50.
 
     # TODO 3: Enter the game loop, with a clock tick of 60 (or so) at each iteration.
@@ -113,7 +114,7 @@ def main():
         # TODO 14: As a temporary test, check if test_drop is off screen, if so reset the y position to 10
         # TODO 10: As a temporary test, draw test_drop
 
-        # TODO 20: As a temporary test, check if test_drop is hitting Mike, if so set Mike's last_hit_time
+        # TODO 20: As a temporary test, check if test_drop is hitting Mike (or Alyssa), if so set their last_hit_time
         # TODO 22: When you run this test, slow the rain down to a speed of 2 to see the result, then remove that code
 
         # TODO 26: Draw the Cloud.
@@ -123,13 +124,13 @@ def main():
         # TODO    For each Raindrop in the Cloud's list of raindrops:
             # TODO      - move the Raindrop.
             # TODO      - draw the Raindrop.
-            # TODO  30: if the Hero is hit by a Raindrop, set the Hero's last_time_hit to the current time.
-            # Optional  - if the Raindrop is off the screen or hitting Mike, remove it from the Cloud's list of raindrops.
+            # TODO  30: if the Hero (Mike or Alyssa) is hit by a Raindrop, set the Hero's last_time_hit to the current time.
+            # Optional  - if the Raindrop is off the screen or hitting a Hero, remove it from the Cloud's list of raindrops.
 
-        # TODO 18: Draw the Hero
+        # TODO 18: Draw the Heroes (Mike and Alyssa)
 
         # TODO 6: Update the display and remove the pass statement below
     pass
 
 
-# TODO: Call main.
+# TODO 0: Call main.

@@ -1,4 +1,5 @@
-import pygame, sys
+import pygame
+import sys
 
 
 def main():
@@ -36,6 +37,8 @@ def main():
         # Draw the text onto the screen
         # TODO 5: Render the text "Two Dogs" using the font object (it's like MAKING an image).
         # TODO 6: Draw (blit) the text image onto the screen in the middle bottom.
+        # Hint: Commands like these might be useful..
+        #          screen.get_width(), caption1.get_width(), image1.get_height()
 
         # TODO 7: On your own, create a new bigger font and in white text place a 'funny' message on top of the image.
 
