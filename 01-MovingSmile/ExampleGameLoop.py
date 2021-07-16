@@ -12,11 +12,13 @@ pygame.init()
 
 # Let's create a caption for the game window
 pygame.display.set_caption("Hello World")
+# TODO 01: Change the window caption to say your name.
 
 # Now the screen is where all the magic is going to happen. Our screen will
 # have a width of 640 pixels and a height of 480 pixels. The (0,0) point will
 # be at the top left of our screen. 
 screen = pygame.display.set_mode((640, 480))
+# TODO 05: Change the window size, make sure your circle code still works.
 
 # This is a loop that will run forever, simply because True is always true
 while True:
@@ -40,13 +42,13 @@ while True:
 
     # Draw things on the screen
 
-    # TODO 01: Try to draw a circle (any size, any color, anywhere)
+    # TODO 02: Try to draw a circle (any size, any color, anywhere)
     # pygame.draw.circle(screen, color, pos, radius, width(optional)  )
 
-    # TODO 02: Try to draw a red circle in the middle of the screen with a radius 100
+    # TODO 03: Try to draw a red circle in the middle of the screen with a radius 100
     # pygame.draw.circle(screen, color, pos, radius, width(optional)  )
 
-    # TODO 03: Try to draw a yellow circle with the center exactly in the lower left corner of the screen, radius 10
+    # TODO 04: Try to draw a yellow circle with the center exactly in the lower left corner of the screen, radius 10
     # pygame.draw.circle(screen, color, pos, radius, width(optional)  )
 
     # This will make sure that things appear on our screen, without this
