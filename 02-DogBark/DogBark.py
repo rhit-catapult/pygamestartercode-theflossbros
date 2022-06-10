@@ -16,9 +16,15 @@ def main():
     screen = pygame.display.set_mode((IMAGE_SIZE, IMAGE_SIZE + TEXT_HEIGHT))
     pygame.display.set_caption("Text, Sound, and an Image")
 
-    # Load the music and the image
+    # Prepare the image
     # TODO 1: Create an image with the 2dogs.JPG image
+    # TODO 3: Scale the image to be the size (IMAGE_SIZE, IMAGE_SIZE)
+
+    # Prepare the text caption(s)
     # TODO 4: Create a font object with a size 28 font.
+    # TODO 5: Render the text "Two Dogs" using the font object (it's like MAKING an image).
+
+    # Prepare the music
     # TODO 8: Create a Sound object from the "bark.wav" file.
 
     while True:
@@ -31,11 +37,9 @@ def main():
         screen.fill(WHITE)
 
         # Draw the image onto the screen
-        # TODO 3: Scale the image to be the size (IMAGE_SIZE, IMAGE_SIZE)
         # TODO 2: Draw (blit) the image onto the screen at position (0, 0)
 
         # Draw the text onto the screen
-        # TODO 5: Render the text "Two Dogs" using the font object (it's like MAKING an image).
         # TODO 6: Draw (blit) the text image onto the screen in the middle bottom.
         # Hint: Commands like these might be useful..
         #          screen.get_width(), caption1.get_width(), image1.get_height()

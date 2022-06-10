@@ -1,9 +1,5 @@
-# The below two lines constitute what tools we will be using from the toolbox
-# that python provides us with. We will be using the pygame tool as well as
-# the sys tool. pygame is the big hammer we will use to build our game and
-# capture our events (like key presses, mouse movements, etc.). sys is a small
-# tool that allows us to communicate with the part of our computer that runs
-# python and all other programs!
+# The two lines below allow you to use PyGame and System functions.
+# Often programmers use code that other developers have written.
 import pygame
 import sys
 
@@ -12,7 +8,7 @@ pygame.init()
 
 # Let's create a caption for the game window
 pygame.display.set_caption("Hello World")
-# TODO 01: Change the window caption to say your name.
+# TODO 00: Change the window caption to say your name.
 
 # Now the screen is where all the magic is going to happen. Our screen will
 # have a width of 640 pixels and a height of 480 pixels. The (0,0) point will
@@ -39,6 +35,9 @@ while True:
             sys.exit()
 
         # Additional interactions with events
+
+    # TODO 01: Make the background white by uncommenting the line below
+    # screen.fill(pygame.Color("Gray"))
 
     # Draw things on the screen
 
