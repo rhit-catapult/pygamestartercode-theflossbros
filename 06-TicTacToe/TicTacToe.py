@@ -4,9 +4,10 @@ import sys
 
 # --------------------------- Conversion helper functions ---------------------------
 
-
-def get_row_col(mouse_x, mouse_y):
-    """ Converts an x, y screen position into a row, col value. """
+def get_row_col(mouse_pos):
+    """ Converts an (x, y) screen position into a row, col value. """
+    mouse_x = mouse_pos[0]  # Note: a point tuple is now passed into this function.
+    mouse_y = mouse_pos[1]
     # Note: the top row is row=0 (bottom row=2), left col is col=0 (right col=2)
     spacing_x = 86 + 8
     spacing_y = 98 + 5
@@ -87,8 +88,8 @@ class ViewController:
     def check_event(self, event):
         """ Takes actions as necessary based on the current event. """
         # TODO 16: If the event is pygame.MOUSEBUTTONUP
-        #     Get the mouse click position as x and y variables
-        #     Convert the x and y variables into row and col using get_row_col
+        #     Get the mouse click position (event.pos or pygame.mouse.get_pos())
+        #     Get the row and col values of that position using get_row_col
         #     Inform the model object about this event
         # TODO 17: If the event is pygame.KEYDOWN
         #     Get the pressed_keys
