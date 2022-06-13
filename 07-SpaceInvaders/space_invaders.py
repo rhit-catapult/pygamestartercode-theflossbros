@@ -19,6 +19,10 @@ class Missile:
         #   where the line starts at the current position of this Missile.
         pass
 
+    def is_off_screen(self):
+        # Return true if the y value of the missle is less than 0 (or -8 depending how how you draw) i.e. off the screen
+        pass
+
 
 class Fighter:
     def __init__(self, screen):
@@ -130,13 +134,11 @@ def main():
 
         # TODO 12: For each badguy in the enemy_fleet.badguys list
         #     TODO 13: For each missile in the fighter missiles
+        #         TODO 13: If the missle is off the screen
+        #             TODO 13: Mark the missile has_exploded = True (cleaning up off screen stuff)
         #         TODO 14: If the badguy is hit by the missile
         #             TODO 15: Mark the badguy is_dead = True
         #             TODO 16: Mark the missile has_exploded = True
-
-        #     TODO 13 (optional extra): For each missile in the fighter missiles
-        #         TODO 14 (optional extra): If the missle.y is less than 0 (or -8)
-        #             TODO 16 (optional extra): Mark the missile has_exploded = True (cleaning up off screen stuff)
 
         # TODO 17: Use the fighter to remove exploded missiles
         # TODO 18: Use the enemy_fleet to remove dead badguys
