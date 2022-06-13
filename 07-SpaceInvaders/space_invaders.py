@@ -69,7 +69,7 @@ class Badguy:
         # Draw this Badguy, using its image at its current (x, y) position.
         pass
 
-    def hit_by(self, missile):
+    def is_hit_by(self, missile):
         # Make a Badguy hitbox rect.
         # Return True if that hitbox collides with the xy point of the given missile.
         pass
@@ -134,11 +134,13 @@ def main():
 
         # TODO 12: For each badguy in the enemy_fleet.badguys list
         #     TODO 13: For each missile in the fighter missiles
-        #         TODO 13: If the missle is off the screen
-        #             TODO 13: Mark the missile has_exploded = True (cleaning up off screen stuff)
         #         TODO 14: If the badguy is hit by the missile
         #             TODO 15: Mark the badguy is_dead = True
         #             TODO 16: Mark the missile has_exploded = True
+
+        # TODO 16.5: For each missile in the fighter missiles
+        #     TODO 16.5: If the missle is off the screen
+        #         TODO 16.5: Mark the missile has_exploded = True (cleaning up off screen stuff)
 
         # TODO 17: Use the fighter to remove exploded missiles
         # TODO 18: Use the enemy_fleet to remove dead badguys
