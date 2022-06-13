@@ -21,10 +21,12 @@ class Missile:
 
 
 class Fighter:
-    def __init__(self, screen, x, y):
-        # Store the given parameters to instance variables.
-        # Set   self.missiles   to the empty list.
+    def __init__(self, screen):
+        # Store the screen to an instance variable.
         # Load the file  "fighter.png"  as the image
+        # Set the x instance variable as the screen width / 2 - image width / 2
+        # Set the y instance variable as the screen height - image height
+        # Set   self.missiles   to the empty list.
         # Set the colorkey to white (it has a white background that needs removed) using the method set_colorkey
         pass
 
@@ -105,8 +107,7 @@ def main():
 
     # TODO 9: Set    enemy_rows    to an initial value of 3.
     # TODO 10: Create an EnemyFleet object (called enemy_fleet) with the screen and enemy_rows
-    # TODO 1: Create a Fighter (called fighter) at location  320, 590
-    #             Note: 320 is screen.get_width() / 2 and 590 is screen.get_height() - the ship's image height.
+    # TODO 1: Create a Fighter (called fighter)
 
     while True:
         clock.tick(60)
@@ -116,8 +117,8 @@ def main():
                 sys.exit()
 
         screen.fill((0, 0, 0))
-        # TODO 3: If pygame.K_LEFT is pressed and fighter.x is greater than -50 move the fighter left 5
-        # TODO 4: If pygame.K_RIGHT is pressed and fighter.x is less than 590 move the fighter right 5
+        # TODO 3: If pygame.K_LEFT is pressed and fighter.x is greater than -50 (image width/2) move the fighter left 5
+        # TODO 4: If pygame.K_RIGHT is pressed and fighter.x is less than 590 (screen width - image width/2) move the fighter right 5
         # TODO 2: Draw the fighter
 
         # TODO 11: Move the enemy_fleet
