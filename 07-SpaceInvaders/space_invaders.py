@@ -46,7 +46,7 @@ class Fighter:
     def remove_exploded_missiles(self):
         # Already complete
         for k in range(len(self.missiles) - 1, -1, -1):
-            if self.missiles[k].has_exploded or self.missiles[k].y < 0:
+            if self.missiles[k].has_exploded or self.missiles[k].y < -8:
                 del self.missiles[k]
 
 
@@ -138,6 +138,7 @@ def main():
         #             TODO 15: Mark the badguy is_dead = True
         #             TODO 16: Mark the missile has_exploded = True
 
+        # Optional TODOs (technically this is already done within fighter.remove_exploded_missiles)
         # TODO 16.5: For each missile in the fighter missiles
         #     TODO 16.5: If the missle is off the screen
         #         TODO 16.5: Mark the missile has_exploded = True (cleaning up off screen stuff)
