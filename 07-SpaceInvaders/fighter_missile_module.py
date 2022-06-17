@@ -55,6 +55,7 @@ class Fighter:
             if self.missiles[k].has_exploded or self.missiles[k].y < -8:
                 del self.missiles[k]
 
+
 def main():
     pygame.init()
     clock = pygame.time.Clock()

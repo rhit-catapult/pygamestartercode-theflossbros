@@ -1,6 +1,9 @@
 import pygame
 import sys
 
+# TODO: when need import the fighter_missile_module
+# TODO: when need import the enemy_fleet_module
+
 
 def main():
     pygame.init()
@@ -20,8 +23,8 @@ def main():
                 sys.exit()
 
         screen.fill((0, 0, 0))
-        # TODO 3: If pygame.K_LEFT is pressed and fighter.x is greater than -50 (image width/2) move the fighter left 5
-        # TODO 4: If pygame.K_RIGHT is pressed and fighter.x is less than 590 (screen width - image width/2) move the fighter right 5
+        # TODO 3: If pygame.K_LEFT is pressed and move the fighter left 5 (i.e. -5)
+        # TODO 4: If pygame.K_RIGHT is pressed and move the fighter right 5
         # TODO 2: Draw the fighter
 
         # TODO 11: Move the enemy_fleet
