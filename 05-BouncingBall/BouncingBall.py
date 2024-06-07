@@ -12,8 +12,9 @@ class Ball:
         self.y = random.randint(100,500)
         self.color = (random.randint(0,255),random.randint(0,255),random.randint(0,255))
         self.radius = random.randint(10,40)
-        self.speed_x = random.randint(3,7)
-        self.speed_y = random.randint(3,7)
+        self.speed_x = random.randint(-7,7)
+        self.speed_y = random.randint(-7,7)
+
 
     def draw(self):
         pygame.draw.circle(self.screen, self.color, (self.x, self.y), self.radius)
